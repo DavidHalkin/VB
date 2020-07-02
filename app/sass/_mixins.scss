@@ -1,0 +1,45 @@
+@import
+'_custom_bootstrap_variables.scss',
+'../../bower_components/bootstrap/scss/_functions.scss',
+'../../bower_components/bootstrap/scss/_variables.scss',
+'../../bower_components/bootstrap/scss/_mixins.scss';
+// @each $color, $value in $theme-colors {
+// 	.btn-outline-#{$color} {
+// 		@include button-outline-variant($value);
+// 		@include hover {
+// 			color: $value !important;
+// 			background: transparent !important;
+// 		}
+// 		&:active{
+// 			color: $value !important;
+// 			background: transparent !important;
+// 		}
+// 	}
+// }
+
+// @each $color, $value in $theme-colors {
+// 	.btn-#{$color} {
+// 		@include button-variant($value, $value);
+// 		@include hover {
+// 			color: #fff !important;
+// 			background: $value !important;
+// 			border-color: $value !important;
+// 		}
+// 		&:active{
+// 			color: #fff !important;
+// 			background: $value !important;
+// 			border-color: $value !important;
+// 		}
+// 	}
+// }
+@mixin placeholder_custom{
+	&:-ms-input-placeholder {
+		@content
+	}
+	&::-moz-placeholder {
+		@content
+	}
+	&::-webkit-input-placeholder {
+		@content
+	}
+}
