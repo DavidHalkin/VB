@@ -2,7 +2,7 @@
 
 @media (max-width: 991.98px) { .header { height: 60px; } }
 
-@media (max-width: 991.98px) { .header .logo { max-width: 200px; } }
+@media (max-width: 991.98px) { .header .logo { width: 200px; } }
 
 .header .nav_menu li a { height: 100%; font-weight: 400; opacity: .87; color: #191919; font-size: 14px; border-bottom: 4px solid transparent; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
