@@ -12,15 +12,17 @@
 <body>
 	<div class="wrapper">
 		<header class="header px-3 px-md-4 d-flex">
-			<strong class="logo align-self-center"><a href="#"><img src="images/logo.png" alt=""></a></strong>
-			<div class="nav_menu col px-0 d-flex justify-content-end">
-				<ul class="list-unstyled mb-0 d-flex">
-					<li class="active"><a href="#" class="px-4 text-uppercase">home</a></li>
-					<li><a href="#" class="px-4 text-uppercase">massage</a></li>
-					<li><a href="#" class="px-4 text-uppercase">Anfart</a></li>
-					<li><a href="#" class="px-4 text-uppercase">Kontakt</a></li>
+			<strong class="logo align-self-center"><a href="#"><img src="images/logo.png" alt="" class="img-fluid"></a></strong>
+			<div class="nav_menu col px-0 py-3 py-lg-0 d-block d-lg-flex justify-content-lg-end nav_menu_js">
+				<!-- <strong class="logo d-block d-lg-none text-center px-4 mb-3"><a href="#"><img src="images/logo.png" alt="" class="img-fluid"></a></strong> -->
+				<ul class="list-unstyled mb-0 d-lg-flex">
+					<li class="active"><a href="#" class="px-4 py-3 py-lg-0 text-uppercase">home</a></li>
+					<li><a href="#" class="px-4 py-3 py-lg-0 text-uppercase">massage</a></li>
+					<li><a href="#" class="px-4 py-3 py-lg-0 text-uppercase">Anfart</a></li>
+					<li><a href="#" class="px-4 py-3 py-lg-0 text-uppercase">Kontakt</a></li>
 				</ul>
 			</div>
+			<span class="align-self-center ml-auto mob_nav_btn fz_30 mob_nav_btn_js"><i class="fas fa-bars"></i></span>
 		</header>
 		<div class="main">
 			<div class="promo-block p-3 text-center mb-5" style="background-image: url(images/promo.jpg);">
@@ -259,9 +261,103 @@
 					<div class="bg-warning">soc</div>
 				</div>
 			</div>
-			<footer class="footer container-fluid bg-dark text-white">
+			<footer class="footer container-fluid bg-dark text-white pt-4 pb-3 pb-xl-5">
 				<div class="footer_cont mx-auto">
-					sd
+					<div class="row">
+						<div class="col-12 col-xl-3 text-center text-xl-left">
+							<a href="#" class="d-inline-block mb-5 mb-xl-4"><img src="images/logo_footer.png" alt="" class="img-fluid"></a>
+							<!-- info for desktop -->
+							<div class="d-none d-xl-block">
+								<h3><i class="fas fa-map-marker-alt"></i><span>Adresse</span></h3>
+								<p>Zeltweg 50, <br> 8032 Zürich</p>
+								<h3><i class="fas fa-envelope"></i><span>Email</span></h3>
+								<p><a href="mailto:info@vitalbeauty.ch" class="custom_link">info@vitalbeauty.ch</a></p>
+							</div>
+							<!-- info for desktop /-->
+						</div>
+						<div class="col-12 col-xl-9">
+							<div class="row">
+								<!-- info for tablet and down -->
+								<div class="col-12 col-sm-6 col-lg-3 d-xl-none pb-3 pb-lg-0">
+									<h3><i class="fas fa-map-marker-alt"></i><span>Adresse</span></h3>
+									<p>Zeltweg 50, <br> 8032 Zürich</p>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3 d-xl-none pb-3 pb-lg-0">
+									<h3><i class="fas fa-envelope"></i><span>Email</span></h3>
+									<p><a href="mailto:info@vitalbeauty.ch" class="custom_link">info@vitalbeauty.ch</a></p>
+								</div>
+								<!-- info for tablet and down /-->
+								<div class="col-12 col-sm-6 col-lg-3 col-xl-4 pb-3">
+									<h3><i class="far fa-clock"></i><span>Öffnungszeiten</span></h3>
+									<p>Montag - Samstag <span class="d-inline-block">8:00 - 20:00</span></p>
+									<p>Sonntag Geschlossen</p>
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-3 col-xl-4 pb-3">
+									<h3><i class="fas fa-mobile-alt"></i><span>Kontakt</span></h3>
+									<p>Telefon  <a href="tel:+41438117070" class="custom_link">+41 (43) 811 70 70</a></p>
+									<p>Telefon <a href="tel:+41764776753" class="custom_link">+41 (76) 477 67 53</a></p>
+								</div>
+
+								<div class="col-12 col-sm-10 col-md-6 col-xl-4 pb-5 pb-xl-3 pt-4 pt-xl-0">
+									<h3><i class="fas fa-file"></i><span>Newsletter</span></h3>
+									<div class="form-row custom_subscribe">
+										<div class="col">
+											<input type="text" class="form-control is-invalid"  placeholder="Email Adresse">
+										</div>
+										<div class="col-auto">
+											<button type="submit" class="btn btn-primary text-uppercase fz_14 fw_500">senden</button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<h3>Anreise</h3>
+							<div class="row">
+								<div class="col-12 col-md-auto pb-3 pb-md-0">
+									<p class="mb-0">Tram bis Kunsthaus</p>
+									<ul class="list-unstyled d-flex flex-wrap nums_list">
+										<li class="pt-2 pr-2"><span class="text-white" style="background:#10c327;">3</span></li>
+										<li class="pt-2 pr-2"><span class="text-white" style="background:#92622e;">5</span></li>
+										<li class="pt-2 pr-2"><span class="text-white" style="background:#4744a3;">9</span></li>
+									</ul>
+								</div>
+								<div class="col-12 col-md-auto pb-3 pb-md-0">
+									<p class="mb-0">Tram/Zug bis Kreuzplatz</p>
+									<ul class="list-unstyled d-flex flex-wrap nums_list">
+										<li class="pt-2 pr-2"><span class="text-white" style="background:#a9cf00;">8</span></li>
+										<li class="pt-2 pr-2"><span class="text-white" style="background:#29ab3a;">11</span></li>
+										<li class="pt-2 pr-2"><span class="text-white" style="background:#e92216;">S18</span></li>
+										<li class="pt-2 pr-2"><span>SN18</span></li>
+									</ul>
+								</div>
+								<div class="col-12 col-md-auto pb-3 pb-md-0">
+									<p class="mb-0">Bus bis Sprecherstrasse</p>
+									<ul class="list-unstyled d-flex flex-wrap nums_list">
+										<li class="pt-2 pr-2"><span class="text-white" style="background:#969ed1;">31</span></li>
+									</ul>
+								</div>
+							</div>
+							<p class="mb-0">Zug bis Stadelhofen</p>
+							<ul class="list-unstyled d-flex flex-wrap nums_list">
+								<li class="pt-2 pr-2"><span class="text-white" style="background:#6f84bf;">S3</span></li>
+								<li class="pt-2 pr-2"><span class="text-white" style="background:#1b88a4;">S5</span></li>
+								<li class="pt-2 pr-2"><span class="text-white" style="background:#463378;">S6</span></li>
+								<li class="pt-2 pr-2"><span class="text-dark" style="background:#ffa201;">S7</span></li>
+								<li class="pt-2 pr-2"><span class="text-white" style="background:#239c36;">S9</span></li>
+								<li class="pt-2 pr-2"><span class="text-white" style="background:#8276aa;">S11</span></li>
+								<li class="pt-2 pr-2"><span class="text-white" style="background:#e20a16;">S12</span></li>
+								<li class="pt-2 pr-2"><span class="text-white" style="background:#c6a57e;">S15</span></li>
+								<li class="pt-2 pr-2"><span class="text-white" style="background:#82bba2;">S16</span></li>
+								<li class="pt-2 pr-2"><span class="text-white" style="background:#73b24b;">S23</span></li>
+								<li class="pt-2 pr-2"><span>SN1</span></li>
+								<li class="pt-2 pr-2"><span>SN5</span></li>
+								<li class="pt-2 pr-2"><span>SN6</span></li>
+								<li class="pt-2 pr-2"><span>SN7</span></li>
+								<li class="pt-2 pr-2"><span>SN9</span></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</footer>
 		</div>
