@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>Bestellen</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">  -->
+		<link rel="stylesheet" type="text/css" href="css/custom_bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/libs.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/all.css" />
+	</head>
+<body>
+	<div class="wrapper d-flex flex-column">
+		<div class="header p-3 text-center col-auto">
+			<a href="#"><img src="images/logo.png" alt="" class="img-fluid"></a>
+		</div>
+		<div class="main bg-secondary p-3 col">
+			<div class="container-md bg-white px-3 px-md-5 py-4">
+				<h1 class="fz_30 pb-4">Als Gast bestellen</h1>
+				<h2 class="fz_24">Anschrift</h2>
+				<p class="fz_18">Folgende Daten benötigen wir für Ihre Bestellung.</p>
+				<div class="form-row pt-4">
+					<div class="col-12">
+						<div class="form-group d-flex flex-wrap">
+							<div class="custom-control custom-radio mr-4 custom_radio_position">
+								<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+								<label class="custom-control-label fw_500" for="customRadio1">Frau</label>
+							</div>
+							<div class="custom-control custom-radio custom_radio_position">
+								<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label fw_500" for="customRadio2">Herr</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form-group">
+							<label for="a1" class="font-weight-bold fz_14">Vorname</label>
+							<input type="text" class="form-control is-invalid" id="a1" placeholder="Example input placeholder">
+							<div class="invalid-feedback fz_12">Bitte geben Sie Ihren Vornamen ein (1-30 Zeichen).</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form-group">
+							<label for="a11" class="font-weight-bold fz_14">Nachname</label>
+							<input type="text" class="form-control" id="a11" placeholder="">
+							<div class="invalid-feedback fz_12">Bitte geben Sie Ihren Nachnamen ein (1-30 Zeichen).</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-7">
+						<div class="form-group">
+							<label for="a11a" class="font-weight-bold fz_14">Strasse</label>
+							<input type="text" class="form-control" id="a11a" placeholder="">
+							<div class="invalid-feedback fz_12">Bitte geben Sie Ihre Strasse ein (1-45 Zeichen).</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="form-group">
+							<label for="a1d1" class="font-weight-bold fz_14">Hausnummer</label>
+							<input type="text" class="form-control" id="a1d1" placeholder="">
+							<div class="invalid-feedback fz_12">Bitte geben Sie Ihre Hausnummer ein (1-8 Zeichen).</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form-group">
+							<label for="a11g" class="font-weight-bold fz_14">Adresszusatz </label>
+							<input type="text" class="form-control" id="a11g" placeholder="">
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="form-group">
+							<label for="a1d1f" class="font-weight-bold fz_14">PLZ</label>
+							<input type="text" class="form-control" id="a1d1f" placeholder="">
+							<div class="invalid-feedback fz_12">Bitte geben Sie eine gültige Postleitzahl ein.</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-7">
+						<div class="form-group">
+							<label for="a11aq" class="font-weight-bold fz_14">Ort</label>
+							<input type="text" class="form-control" id="a11aq" placeholder="">
+							<div class="invalid-feedback fz_12">Bitte geben Sie Ihren Ort ein (1-45 Zeichen).</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form-group">
+							<label for="a11ga" class="font-weight-bold fz_14">Land </label>
+							<select class="custom-select rounded-0" id="validationTooltip04" required>
+								<option selected value="">Deutschland</option>
+								<option selected value="">Österreich</option>
+								<option selected value="">Schweiz</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<h2 class="fz_24 pt-4">Benachrichtigung per E-Mail</h2>
+				<p class="fz_18">Ihre E-Mail-Adresse benötigen wir für die Kaufabwicklung.</p>
+				<div class="form-row">
+					<div class="col-12">
+						<div class="form-group">
+							<label for="a11gz" class="font-weight-bold fz_14">E-Mail-Adresse</label>
+							<input type="text" class="form-control" id="a11gz" placeholder="">
+							<div class="invalid-feedback fz_12">Bitte geben Sie eine E-Mail-Adresse an.</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form-group">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input is-invalid" type="checkbox" value="" id="c1" required>
+								<label class="custom-control-label text-dark fz_17" for="c1">
+									 Mit der Anmeldung erkläre ich mich mit den <a href="#" class="text-success">AGB</a> und der <a href="#" class="text-success">Datenschutzerklärung</a>, insbesondere mit den Bestimmungen zur Missbrauchs- und Betrugsverhinderung, einverstanden. 
+								</label>
+								<div class="invalid-feedback fz_12">Ohne Zustimmung zu den AGB ist eine Bestellung nicht möglich.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 pt-3">
+						<button class="btn btn-block btn-danger btn-lg">Weiter zur Zahlungsart</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer py-3 px-2 col-auto">
+			<ul class="list-unstyled mb-0 d-flex justify-content-center flex-wrap">
+				<li class="active"><a href="#" class="px-1 py-1 px-sm-4">Home</a></li>
+				<li><a href="#" class="px-1 py-1 px-sm-4">Massage</a></li>
+				<li><a href="#" class="px-1 py-1 px-sm-4">Anfart</a></li>
+				<li><a href="#" class="px-1 py-1 px-sm-4">Kontakt</a></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+    var map;
+    function initMap() {
+      // The location of Vital & Beauty
+      var coords = {lat: 47.367675, lng: 8.552143};
+      map = new google.maps.Map(document.getElementById('map'), {
+      center: coords,
+      zoom: 15,
+      mapTypeId: 'roadmap',
+      scrollwheel: false,
+      gestureHandling: 'cooperative'
+      });
+      var marker = new google.maps.Marker({position: coords, map: map});
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwKVVOMs40Pn2o3bQ_tRrZQtPvl79YBZ8&callback=initMap"
+    async defer></script>
+</body>
+</html>

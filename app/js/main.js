@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	// main mobele nav-menu
-	$('body .header').append('<span class="menu_overlay menu_overlay_js"></span>');
+	$('body header.header').append('<span class="menu_overlay menu_overlay_js"></span>');
 	$(".mob_nav_btn_js").click(function(){
         $(".nav_menu_js").toggleClass("opened");
         $(".menu_overlay_js").toggleClass("active");
