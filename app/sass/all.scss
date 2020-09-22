@@ -260,6 +260,22 @@
 	font-weight: 300;
 	line-height: 26px;
 }
+.team_block {
+	.card-body{
+		@include media-breakpoint-down(xs) {
+			padding-left: 10px;
+			padding-right: 10px;
+			.card-title{
+				font-size: 16px;
+				line-height: 18px;
+			}
+			.card_list{
+				font-size: 15px;
+				line-height: 17px;
+			}
+		}
+	}
+}
 .owl_carousel{
 	.item{
 		padding: 10px;
