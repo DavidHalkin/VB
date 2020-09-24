@@ -338,3 +338,22 @@
 .address_holder{
 	max-width: 720px;
 }
+.wtp_link{
+	transition: all 0.3s ease;
+	color:theme-color("success");
+	img{
+		max-width: 35px;
+		// margin-top: -3px;
+	}
+	span{
+		font-weight: 500;
+		font-size: 14px;
+		+ span{
+			padding-top: 2px;
+		}
+	}
+	&:hover{
+		color:theme-color("success");
+
+	}
+}

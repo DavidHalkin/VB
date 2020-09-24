@@ -33,9 +33,24 @@ header.header{
 		}
 	}
 	.logo{
-		@include media-breakpoint-down(md) {
-			width: 200px;
+		a{
+			// width: 40px;
+			// height: 30px;
+			// background: linear-gradient(to bottom, #61d36c 0%,#5ad066 16%,#32ba46 76%,#25b33c 100%);
+			// color: #fff;
+			// // border-radius: 3px;
+			// font-size: 25px;
+			// span{
+			// 	font-size: 13px;
+			// }
+			
 		}
+		// @include media-breakpoint-down(lg) {
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	left: 50%;
+		// 	transform:translate(-50%,-50%);
+		// }
 	}
 	.nav_menu{
 		li{
@@ -48,6 +63,7 @@ header.header{
 				border-bottom: 4px solid transparent;
 				display: flex;
 				align-items:center;
+				outline: none;
 			}
 			&.active{
 				a{

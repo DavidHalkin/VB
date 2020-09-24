@@ -4,25 +4,29 @@
 		<meta charset="utf-8">
 		<title>Klassische Massage | Vital & Beauty</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-		<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">  -->
 		<link rel="stylesheet" type="text/css" href="css/custom_bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/libs.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/all.css" />
 	</head>
 <body>
-	<div class="wrapper">
-		<header class="header px-3 px-md-4 d-flex">
-			<strong class="logo align-self-center mx-auto mx-lg-0"><a href="#"><img src="images/logo.png" alt="" class="img-fluid"></a></strong>
-			<div class="nav_menu col px-0 py-3 py-lg-0 d-block d-lg-flex justify-content-lg-end nav_menu_js">
-				<!-- <strong class="logo d-block d-lg-none text-center px-4 mb-3"><a href="#"><img src="images/logo.png" alt="" class="img-fluid"></a></strong> -->
-				<ul class="list-unstyled mb-0 d-lg-flex">
-					<li class="active"><a href="#" class="px-4 py-3 py-lg-0 text-uppercase">home</a></li>
-					<li><a href="#" class="px-4 py-3 py-lg-0 text-uppercase">massage</a></li>
-					<li><a href="#" class="px-4 py-3 py-lg-0 text-uppercase">Anfart</a></li>
-					<li><a href="#" class="px-4 py-3 py-lg-0 text-uppercase">Kontakt</a></li>
+	<div class="wrapper" id="home">
+		<header class="header px-3 px-md-4 d-flex align-items-center">
+			<strong class="logo">
+				<a href="#"><img src="images/logo.png" alt=""></a>
+			</strong>
+			<div class="nav_menu col px-0 py-3 py-lg-0 d-none d-lg-flex justify-content-lg-end nav_menu_js">
+				<ul class="list-unstyled mb-0 d-lg-flex nav_js">
+					<li class="active"><a href="#home" class="px-4 py-3 py-lg-0 text-uppercase">Home</a></li>
+					<li><a href="#massage" class="px-4 py-3 py-lg-0 text-uppercase">Massage</a></li>
+					<!-- <li><a href="#anfart" class="px-4 py-3 py-lg-0 text-uppercase">Anfart</a></li> -->
+					<li><a href="#kontakt" class="px-4 py-3 py-lg-0 text-uppercase">Kontakt</a></li>
 				</ul>
 			</div>
-			<span class="align-self-center mob_nav_btn fz_30 mob_nav_btn_js"><i class="fas fa-bars"></i></span>
+			<!-- <span class="align-self-center mob_nav_btn fz_30 mob_nav_btn_js"><i class="fas fa-bars"></i></span> -->
+			<a class="wtp_link d-flex d-lg-none align-items-center ml-auto" href="wa.me/41792759803">
+				<span><img src="images/wtp_logo.png" alt=""></span>
+				<span>Chat in WhatsApp</span>
+			</a>
 		</header>
 		<header class="header header_bottom px-3 px-md-4 d-flex justify-content-center align-items-center">
 			<p class="m-0 pr-3 py-1 text-center">Klassische Massage 60 Min. für 99 CHF</p>
@@ -45,7 +49,7 @@
 					<li class="p-1 p-sm-2"><a href="#"><img src="images/card4.png" alt=""></a></li>
 				</ul>
 			</div>
-			<div class="container-fluid problem_block mx-auto pt-3 pb-0 pb-md-5">
+			<div class="container-fluid problem_block mx-auto pt-3 pb-0 pb-md-5" id="massage">
 				<h2 class="text-center title_marked main_title">Haben Sie Probleme mit dem Rücken?</h2>
 				<div class="list_problem pt-5">
 					<div class="row mx-n2 problem_item">
@@ -178,7 +182,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid bg-secondary py-4 py-md-5 address_block">
+			<div class="container-fluid bg-secondary py-4 py-md-5 address_block" id="kontakt">
 				<h2 class="text-center title_marked main_title">Wie kommt man hin?</h2>
 				<div class="address_holder mx-auto">
 					<div class="row">
@@ -197,50 +201,52 @@
 							<p class="mb-1"><a href="mailto:info@vitalbeauty.ch" class="custom_link">info@vitalbeauty.ch</a></p>
 						</div>
 					</div>
-					<h3>Anreise</h3>
-					<div class="row">
-						<div class="col-12 col-md-4">
-							<p class="mb-0">Tram bis Kunsthaus</p>
-							<ul class="list-unstyled d-flex flex-wrap nums_list">
-								<li class="pt-2 pr-2"><span class="text-white" style="background:#10c327;">3</span></li>
-								<li class="pt-2 pr-2"><span class="text-white" style="background:#92622e;">5</span></li>
-								<li class="pt-2 pr-2"><span class="text-white" style="background:#4744a3;">9</span></li>
-							</ul>
+					<div id="anfart">
+						<h3>Anreise</h3>
+						<div class="row">
+							<div class="col-12 col-md-4">
+								<p class="mb-0">Tram bis Kunsthaus</p>
+								<ul class="list-unstyled d-flex flex-wrap nums_list">
+									<li class="pt-2 pr-2"><span class="text-white" style="background:#10c327;">3</span></li>
+									<li class="pt-2 pr-2"><span class="text-white" style="background:#92622e;">5</span></li>
+									<li class="pt-2 pr-2"><span class="text-white" style="background:#4744a3;">9</span></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-4">
+								<p class="mb-0">Tram/Zug bis Kreuzplatz</p>
+								<ul class="list-unstyled d-flex flex-wrap nums_list">
+									<li class="pt-2 pr-2"><span class="text-white" style="background:#a9cf00;">8</span></li>
+									<li class="pt-2 pr-2"><span class="text-white" style="background:#29ab3a;">11</span></li>
+									<li class="pt-2 pr-2"><span class="text-white" style="background:#e92216;">S18</span></li>
+									<li class="pt-2 pr-2"><span>SN18</span></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-4">
+								<p class="mb-0">Bus bis Sprecherstrasse</p>
+								<ul class="list-unstyled d-flex flex-wrap nums_list">
+									<li class="pt-2 pr-2"><span class="text-white" style="background:#969ed1;">31</span></li>
+								</ul>
+							</div>
 						</div>
-						<div class="col-12 col-md-4">
-							<p class="mb-0">Tram/Zug bis Kreuzplatz</p>
-							<ul class="list-unstyled d-flex flex-wrap nums_list">
-								<li class="pt-2 pr-2"><span class="text-white" style="background:#a9cf00;">8</span></li>
-								<li class="pt-2 pr-2"><span class="text-white" style="background:#29ab3a;">11</span></li>
-								<li class="pt-2 pr-2"><span class="text-white" style="background:#e92216;">S18</span></li>
-								<li class="pt-2 pr-2"><span>SN18</span></li>
-							</ul>
-						</div>
-						<div class="col-12 col-md-4">
-							<p class="mb-0">Bus bis Sprecherstrasse</p>
-							<ul class="list-unstyled d-flex flex-wrap nums_list">
-								<li class="pt-2 pr-2"><span class="text-white" style="background:#969ed1;">31</span></li>
-							</ul>
-						</div>
+						<p class="mb-0">Zug bis Stadelhofen</p>
+						<ul class="list-unstyled d-flex flex-wrap nums_list">
+							<li class="pt-2 pr-2"><span class="text-white" style="background:#6f84bf;">S3</span></li>
+							<li class="pt-2 pr-2"><span class="text-white" style="background:#1b88a4;">S5</span></li>
+							<li class="pt-2 pr-2"><span class="text-white" style="background:#463378;">S6</span></li>
+							<li class="pt-2 pr-2"><span class="text-dark" style="background:#ffa201;">S7</span></li>
+							<li class="pt-2 pr-2"><span class="text-white" style="background:#239c36;">S9</span></li>
+							<li class="pt-2 pr-2"><span class="text-white" style="background:#8276aa;">S11</span></li>
+							<li class="pt-2 pr-2"><span class="text-white" style="background:#e20a16;">S12</span></li>
+							<li class="pt-2 pr-2"><span class="text-white" style="background:#c6a57e;">S15</span></li>
+							<li class="pt-2 pr-2"><span class="text-white" style="background:#82bba2;">S16</span></li>
+							<li class="pt-2 pr-2"><span class="text-white" style="background:#73b24b;">S23</span></li>
+							<li class="pt-2 pr-2"><span>SN1</span></li>
+							<li class="pt-2 pr-2"><span>SN5</span></li>
+							<li class="pt-2 pr-2"><span>SN6</span></li>
+							<li class="pt-2 pr-2"><span>SN7</span></li>
+							<li class="pt-2 pr-2"><span>SN9</span></li>
+						</ul>
 					</div>
-					<p class="mb-0">Zug bis Stadelhofen</p>
-					<ul class="list-unstyled d-flex flex-wrap nums_list">
-						<li class="pt-2 pr-2"><span class="text-white" style="background:#6f84bf;">S3</span></li>
-						<li class="pt-2 pr-2"><span class="text-white" style="background:#1b88a4;">S5</span></li>
-						<li class="pt-2 pr-2"><span class="text-white" style="background:#463378;">S6</span></li>
-						<li class="pt-2 pr-2"><span class="text-dark" style="background:#ffa201;">S7</span></li>
-						<li class="pt-2 pr-2"><span class="text-white" style="background:#239c36;">S9</span></li>
-						<li class="pt-2 pr-2"><span class="text-white" style="background:#8276aa;">S11</span></li>
-						<li class="pt-2 pr-2"><span class="text-white" style="background:#e20a16;">S12</span></li>
-						<li class="pt-2 pr-2"><span class="text-white" style="background:#c6a57e;">S15</span></li>
-						<li class="pt-2 pr-2"><span class="text-white" style="background:#82bba2;">S16</span></li>
-						<li class="pt-2 pr-2"><span class="text-white" style="background:#73b24b;">S23</span></li>
-						<li class="pt-2 pr-2"><span>SN1</span></li>
-						<li class="pt-2 pr-2"><span>SN5</span></li>
-						<li class="pt-2 pr-2"><span>SN6</span></li>
-						<li class="pt-2 pr-2"><span>SN7</span></li>
-						<li class="pt-2 pr-2"><span>SN9</span></li>
-					</ul>
 				</div>
 			</div>
 			<!-- map -->
@@ -260,15 +266,6 @@
 					</div>
 					<div class="row d-none d-sm-flex">
 						<div class="col-12 col-sm-6 col-lg-3 pb-4">
-							<h3><i class="fas fa-map-marker-alt"></i><span>Adresse</span></h3>
-							<p>Zeltweg 50, <br> 8032 Zürich</p>
-						</div>
-						<div class="col-12 col-sm-6 col-lg-3 pb-4">
-							<h3><i class="far fa-clock"></i><span>Öffnungszeiten</span></h3>
-							<p>Montag - Samstag <span class="d-inline-block">8:00 - 20:00</span></p>
-							<p>Sonntag Geschlossen</p>
-						</div>
-						<div class="col-12 col-sm-6 col-lg-3 pb-4">
 							<h3><i class="fas fa-mobile-alt"></i><span>Kontakt</span></h3>
 							<p>Telefon <a href="tel:+41764776753" class="custom_link">+41 (76) 477 67 53</a></p>
 						</div>
@@ -276,10 +273,19 @@
 							<h3><i class="fas fa-envelope"></i><span>Email</span></h3>
 							<p><a href="mailto:info@vitalbeauty.ch" class="custom_link">info@vitalbeauty.ch</a></p>
 						</div>
+						<div class="col-12 col-sm-6 col-lg-3 pb-4">
+							<h3><i class="fas fa-map-marker-alt"></i><span>Adresse</span></h3>
+							<p>Zeltweg 50, <span class="d-inline-block">8032 Zürich</span></p>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3 pb-4">
+							<h3><i class="far fa-clock"></i><span>Öffnungszeiten</span></h3>
+							<p>Montag - Samstag <span class="d-inline-block">8:00 - 20:00</span></p>
+							<p>Sonntag Geschlossen</p>
+						</div>
 					</div>
 				</div>
 				<div class="copy_section text-center py-2">
-					<span class="d-block">Vital & Beauty (c) 2005-2020</span>
+					<span class="d-block">Vital & Beauty &copy; 2005-2020</span>
 				</div>
 			</footer>
 		</div>
